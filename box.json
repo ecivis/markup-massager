@@ -1,0 +1,24 @@
+{
+    "dependencies":{
+        "jsoup-1.8.2":"jar:https://s3.amazonaws.com/ops.ecivis.com/x/jsoup-1.8.2.jar"
+    },
+    "devDependencies":{
+        "testbox":"2.8"
+    },
+    "installPaths":{
+        "testbox":"testbox/",
+        "jsoup-1.8.2":"lib/jsoup-1.8.2"
+    },
+    "testbox":{
+        "runner":"/tests/runner.cfm",
+        "directory":"tests.specs",
+        "watchDelay":"1000",
+        "watchPaths":[
+            "models/**.cfc",
+            "tests/specs/**.cfc"
+        ],
+        "verbose":"false"
+    },
+    "slug":"markup-massager",
+    "packageDirectory":"markupmassager"
+}
